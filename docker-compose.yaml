@@ -1,9 +1,7 @@
 
 services:
   r1:
-   build:
-     context: .
-     dockerfile: Dockerfile-r1
+   build: .
    stdin_open: true
    tty: true
    cap_add:
@@ -18,9 +16,7 @@ services:
        ipv4_address: 10.0.14.4
 
   r2:
-   build:
-     context: .
-     dockerfile: Dockerfile-r2
+   build: .
    stdin_open: true
    tty: true
    cap_add:
@@ -33,9 +29,7 @@ services:
        ipv4_address: 10.0.11.3
 
   r3:
-   build:
-     context: .
-     dockerfile: Dockerfile-r3
+   build: .
    stdin_open: true
    tty: true
    cap_add:
@@ -50,9 +44,7 @@ services:
        ipv4_address: 10.0.15.4
 
   r4:
-   build:
-     context: .
-     dockerfile: Dockerfile-r4
+   build: .
    stdin_open: true
    tty: true
    cap_add:
@@ -65,9 +57,7 @@ services:
        ipv4_address: 10.0.13.3
 
   ha:
-    build:
-     context: .
-     dockerfile: Dockerfile-h
+    build: .
     stdin_open: true
     tty: true
     cap_add:
@@ -78,9 +68,7 @@ services:
         ipv4_address: 10.0.14.3
 
   hb:
-    build:
-      context: .
-      dockerfile: Dockerfile-h
+    build: .
     stdin_open: true
     tty: true
     cap_add:
